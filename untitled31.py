@@ -15,7 +15,7 @@ cursor = db.cursor()
 
 def consulta():
     consulta = "SELECT ciudad, adjetivo FROM centrodetrabajo"
-    lista = ["Fácil", "Hostil", "Sutil", "Sencillo", "Infantil", "Civil", "Fragil", "Viril", "Útil", "Gentil", "Pueril", "Subtil", "Versátil", "Reptil", "Fébril", "Sutil", "Volátil", "Ágil", "Inútil", "Estéril"]
+    lista = ["Fácil", "Hostil", "Sutil", "Sencillo", "Infantil", "Civil", "Fragil", "Útil", "Gentil", "Pueril", "Subtil", "Versátil", "Reptil", "Fébril", "Sutil", "Volátil", "Ágil", "Inútil", "Estéril"]
     print("consulta:", consulta)
     cursor.execute(consulta)
     df = pd.read_sql_query(consulta, db)
